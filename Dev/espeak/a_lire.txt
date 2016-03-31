@@ -1,0 +1,2 @@
+Ceci est un petit texte à lire. Nous pouvons
+tester la ponctuation: les points, les virgules.

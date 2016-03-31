@@ -1,0 +1,24 @@
+<doctype html>
+<html lang="fr">
+  <head>
+    <title>Test Web Speech API</title>
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    Petit test de synthèse vocale...
+    <script>
+      var msg = new SpeechSynthesisUtterance();
+      var voices = window.speechSynthesis.getVoices();
+      console.log(voices);
+      msg.voice = voices[33];
+      msg.voiceURI = 'native';
+      msg.volume = 1;
+      msg.rate = 0.8;
+      msg.pitch = 1;
+      msg.text = 'Salut, je suis le navigateur';
+      msg.lang = 'en-US';
+
+      speechSynthesis.speak(msg);
+    </script>
+  </body>
+</html>
